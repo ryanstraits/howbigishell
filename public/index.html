@@ -1,43 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>How Big Is Hell?</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/application.css">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="hero">
+      <div class="text-center">
+        <div class="banner">
+          <h1>How Big Is Hell?</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="explanation">
+        <div class="col-md-5 col-md-push-1">
+          <p>Belief in the great beyond is quintessentially human. Some version of both heaven and hell have always been staples of culture. Heaven is where you hope your dog and grandma go, hell is where you hope everyone you don't like goes.</p>
+          <p>By hell, of course, we mean that place of fire, brimstone, and eternal, conscious torment that has become a core Christian doctrine.</p>
+          <p>But let's be honest: hell is kind of weird, right? Yet even with a strikingly small about of biblical support, the popular notion of a "fiery, eternal conscious torment" persists.</p>
+        </div>
+        <div class="col-md-5 col-md-push-1">
+          <p>So that got us thinking: what if there were a way to bring more clarity to the idea of hell using modern scientific research techniques? What if we had access to a dataset that could shine more light on the issue? We started asking ourselves one hell of a crazy question… How many people are actually in hell?</p>
+          <p>We're taking a closer look at the Christian ideas of hell, specifically, who’s there now. If you’re interested in learning along with us, keep scrolling and take this quiz.</p>
+        </div>
+      </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <div id="app"></div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+<!--
+      <form id="quiz">
+        <div class="row" id="question-first">
+          <div class="col-md-6 col-md-push-3">
+            <div class="quiz-box">
+              <div class="row">
+                <div class="col-md-10 col-md-push-1">
+                  <h1 class="text-center">Christian Mega-blocs</h1>
+                  <h3>Check the boxes of the groups you think are going to heaven. Leave the rest blank.</h3>
+                  <label class="checkbox-container" data-toggle-id="#question-second">Roman Catholic<input type="checkbox" name="blocks[]" id="blocks_" value="Roman Catholic" /><span class="checkmark"></span></label><label class="checkbox-container" data-toggle-id="#question-second">Independent Christian<input type="checkbox" name="blocks[]" id="blocks_" value="Independent Christian" /><span class="checkmark"></span></label><label class="checkbox-container" data-toggle-id="#question-second">Orthodox Christian<input type="checkbox" name="blocks[]" id="blocks_" value="Orthodox Christian" /><span class="checkmark"></span></label><label class="checkbox-container" data-toggle-id="#question-second">Anglican<input type="checkbox" name="blocks[]" id="blocks_" value="Anglican" /><span class="checkmark"></span></label><label class="checkbox-container" data-toggle-id="#question-second">Jehovah’s Witness &amp; Mormon<input type="checkbox" name="blocks[]" id="blocks_" value="Jehovah’s Witness &amp; Mormon" /><span class="checkmark"></span></label><label class="checkbox-container toggle" data-toggle-id="#question-second">Protestant<input type="checkbox" name="blocks[]" id="blocks_" value="Protestant" /><span class="checkmark"></span></label><label class="checkbox-container" data-toggle-id="#question-second">Israelites before Jesus<input type="checkbox" name="blocks[]" id="blocks_" value="Israelites before Jesus" /><span class="checkmark"></span></label><label class="checkbox-container none-of-these" data-toggle-id="#question-second">None of these<input type="checkbox" name="blocks[]" id="blocks_" value="None of these" /><span class="checkmark"></span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hide" id="question-second">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="text-center"><a class="pill next-arrow" data-scroll="#question-second"><img class="path" width="40" src="images/2-with-results-and-about-path-2@2x.png" /><br /><img class="path" width="40" src="images/2-with-results-and-about-path-2@2x.png" /><br /></a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-push-3">
+              <div class="quiz-box">
+                <div class="row">
+                  <div class="col-md-10 col-md-push-1">
+                    <h1 class="text-center">Protestant Denominations</h1>
+                    <h3>Check the boxes of the groups you think are going to heaven. Leave the rest blank.</h3>
+                    <label class="checkbox-container">Lutheran<input type="checkbox" name="denoms[]" id="denoms_" value="Lutheran" /><span class="checkmark"></span></label><label class="checkbox-container">Charismatic<input type="checkbox" name="denoms[]" id="denoms_" value="Charismatic" /><span class="checkmark"></span></label><label class="checkbox-container">Baptist<input type="checkbox" name="denoms[]" id="denoms_" value="Baptist" /><span class="checkmark"></span></label><label class="checkbox-container">Reformed / Presbyterian<input type="checkbox" name="denoms[]" id="denoms_" value="Reformed / Presbyterian" /><span class="checkmark"></span></label><label class="checkbox-container">Methodist<input type="checkbox" name="denoms[]" id="denoms_" value="Methodist" /><span class="checkmark"></span></label><label class="checkbox-container">United Church<input type="checkbox" name="denoms[]" id="denoms_" value="United Church" /><span class="checkmark"></span></label><label class="checkbox-container">Lutheran / Reformed (United)<input type="checkbox" name="denoms[]" id="denoms_" value="Lutheran / Reformed (United)" /><span class="checkmark"></span></label><label class="checkbox-container">Adventist<input type="checkbox" name="denoms[]" id="denoms_" value="Adventist" /><span class="checkmark"></span></label><label class="checkbox-container">Other Miscellaneous Protestant Groups<input type="checkbox" name="denoms[]" id="denoms_" value="Other Miscellaneous Protestant Groups" /><span class="checkmark"></span></label><label class="checkbox-container none-of-these">None of these<input type="checkbox" name="denoms[]" id="denoms_" value="None of these" /><span class="checkmark"></span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form> -->
+
+      <div id="result"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h3 class="section-header">Share this page</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=How%20big%20is%20hell?%20Take%20the%20quiz%20and%20find%20out!&amp;website&amp;url=https://how-big-is-hell.herokuapp.com/">
+              <div class="circle-icon"><i class="fa fa-2x fa-twitter"></i></div>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://how-big-is-hell.herokuapp.com/">
+              <div class="circle-icon"><i class="fa fa-2x fa-facebook"></i></div>
+            </a>
+            <a target="_blank" href="https://ssl.reddit.com/submit?url=https://how-big-is-hell.herokuapp.com/&amp;title=How%20big%20is%20hell?%20Take%20the%20quiz%20and%20find%20out!">
+              <div class="circle-icon"><i class="fa fa-2x fa-reddit"></i></div>
+            </a>
+            <a target="_blank" href="https://www.tumblr.com/share/link?url=https://how-big-is-hell.herokuapp.com/&amp;name=&amp;description=How%20big%20is%20hell?%20Take%20the%20quiz%20and%20find%20out!">
+              <div class="circle-icon"><i class="fa fa-2x fa-tumblr"></i></div>
+            </a>
+            <a target="_blank" href="https://pinterest.com/pin/create/button/?url=https://how-big-is-hell.herokuapp.com/&amp;description=How%20big%20is%20hell?%20Take%20the%20quiz%20and%20find%20out!&amp;media=">
+              <div class="circle-icon"><i class="fa fa-2x fa-pinterest"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-push-2">
+          <div class="text-center">
+            <h3 class="section-header">About</h3>
+            <p>How Big is Hell is run by a small team of current/former/post-Christians who hope to expand the views and stretch the perspectives of Christians to be more aware of the details and implications of their beliefs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-push-3">
+          <div class="text-center">
+            <h3 class="section-header">Data Sources</h3>
+          </div>
+          <ol>
+            <li>“How Many People Have Every Lived on Earth,” PRB</li>
+            <li>Phil Vaz Apologetics</li>
+            <li>Common Sense Atheism</li>
+            <li>“World Population Estimates Interpolated and Averaged,” Scott Manning</li>
+            <li>“Diffusion of Innovations,” Wikipedia</li>
+            <li>Carrying Capacity, Wikipedia</li>
+            <li>Worldometers</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-push-3">
+          <div class="text-center">
+            <h3 class="section-header">Contact</h3>
+            <a target="_blank" href="https://twitter.com/howbigishell">
+              <div class="circle-icon"><i class="fa fa-twitter fa-2x"></i></div>
+            </a>
+            <a href="mailto:howbigishell@gmail.com">
+              <div class="circle-icon"><i class="fa fa-envelope fa-2x"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <p>&copy; 2019 How Big Is Your Hell. Photos courtesy of Unsplash. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Libraries -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> -->
+    <!-- <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
+    <script src="https://use.fontawesome.com/227a0a51f5.js"></script>
   </body>
 </html>

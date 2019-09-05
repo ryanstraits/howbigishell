@@ -1,0 +1,197 @@
+body {
+  background-color: rgba(43, 43, 64, 0.98);
+  color: white;
+  font-family: "Seravek", Helvetica, Arial, serif;
+  margin-top: -20px;
+  font-size: 20px
+}
+
+.globe {
+  margin: 5px 5px 0 0;
+}
+
+.hero {
+  background-color: rgba(255, 255, 255, 0);
+  letter-spacing: 5.5px;
+  height: 600px;
+  background-image: url(../images/2-with-results-and-about-vek-labs-218896-unsplash.png);
+  background-repeat: none;
+  background-position: -685px -641px
+}
+
+.hero h1 {
+  font-family: "Avenir-Heavy", Helvetica, Arial, serif;
+  font-size: 110.0px;
+  text-transform: uppercase;
+  margin: 0
+}
+
+.hero .banner {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%
+}
+
+#explanation {
+  margin-top: 100px;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 300
+}
+
+#explanation p {
+  margin-bottom: 30px
+}
+
+.pill {
+  font-size: 12px;
+  background-color: #b0b5e7;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 75px;
+  width: 150px;
+  box-shadow: 0px 2px 5px #000;
+  margin: 40px 0
+}
+
+.pill h3 {
+  color: #2f3044;
+  font-size: 21px;
+  margin: 0
+}
+
+.pill.purple {
+  background-color: #535299;
+  width: 180px;
+  padding: 20px 20px
+}
+
+.pill.purple h3 {
+  color: white
+}
+
+.quiz-box {
+  background-color: #52518f;
+  border-radius: 25px;
+  box-shadow: 0px 2px 5px #000;
+  padding: 15px
+}
+
+.quiz-box h3 {
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 300;
+  margin-bottom: 40px
+}
+
+.quiz-box label {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 300;
+  margin-left: 10px
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #6f6ead;
+  border: 2px solid #464564;
+  border-radius: 5px
+}
+
+.checkbox-container:hover input~.checkmark {
+  background-color: #ccc
+}
+
+.checkbox-container input:checked~.checkmark {
+  background-color: #ced2f7
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none
+}
+
+.checkbox-container input:checked~.checkmark:after {
+  display: block
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: -2px;
+  width: 10px;
+  height: 20px;
+  border: solid #cf39ca;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #52518f;
+  color: white;
+  padding: 20px;
+  font-size: 15px
+}
+
+footer p {
+  margin: 0
+}
+
+.circle-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #b0b5e7;
+  color: #2f2f44;
+  line-height: 80px;
+  display: inline-block;
+  margin-right: 10px
+}
+
+h3.section-header {
+  font-size: 21px;
+  margin: 40px 0 20px
+}
+
+.results h2 {
+  font-size: 45px
+}
+
+.results p {
+  margin: 20px 0
+}
