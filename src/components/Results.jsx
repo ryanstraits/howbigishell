@@ -33,12 +33,13 @@ class Results extends React.Component {
                                   <p>is the current population of your hell.</p>
                                   <p>
                                     That’s <strong>{ calc.populationPercentage() }%</strong> of all humans who’ve ever lived and <strong>{ calc.currentPopulationMultiplier() } times</strong> the current population of Earth.
-                                    <div>
-                                      {Array(calc.earths()).fill(1).map((el, i) =>
-                                        <img key={i} width="79" alt='globe' className='globe' src='images/2-with-results-and-about-nounearth1585344-3@2x.png'></img>
-                                      )}
-                                    </div>
                                   </p>
+                                  <div>
+                                    {Array(calc.earths()).fill(1).map((el, i) =>
+                                      <img key={i} width="79" alt='globe' className='globe' src='images/2-with-results-and-about-nounearth1585344-3@2x.png'></img>
+                                    )}
+                                  </div>
+
                                   <p>It would take <strong>{ calc.earths() } Earths</strong> to hold this population.</p>
                               </div>
                           </div>

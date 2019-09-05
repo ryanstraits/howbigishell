@@ -16,6 +16,7 @@ class Form extends React.Component {
     this.state = { calc: null, hideDenoms: true }
     this.onResultsSubmit = this.onResultsSubmit.bind(this);
     this.handleReset = this.handleReset.bind(this);
+    this.handleProtestants = this.handleProtestants.bind(this);
   }
 
   handleReset () {
@@ -26,6 +27,10 @@ class Form extends React.Component {
       hideDenoms: true,
       calc: null
     })
+  }
+
+  handleProtestants () {
+    this.setState({ hideDenoms: false })
   }
 
   onResultsSubmit () {
@@ -43,6 +48,8 @@ class Form extends React.Component {
     this.setState((state, props) => ({
       calc: calc
     }));
+
+    window.scroll_to('#result');
   }
 
   render () {
@@ -50,7 +57,7 @@ class Form extends React.Component {
       <React.Fragment>
         <form id='quiz'>
           <NextButton nextId="#question-first" />
-          <QuestionBlock id='question-first' title='Christian Mega-blocs' options={constants.major_blocks} group='blocks' />
+          <QuestionBlock id='question-first' title='Christian Mega-blocs' options={constants.major_blocks} group='blocks' handleProtestants={this.handleProtestants} />
           <NextButton nextId="#question-second" hidden={this.state.hideDenoms} />
           <QuestionBlock id='question-second' title='Protestant Denominations' options={constants.major_denoms} hidden={this.state.hideDenoms} />
           <ResultsButton onResultsSubmit={this.onResultsSubmit} />

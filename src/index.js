@@ -11,6 +11,7 @@ window.scroll_to = function(id) {
   }, 1000);
 };
 
+// MOUNT UP!
 ReactDOM.render(<Form />, document.getElementById('app'));
 
 // If you want your app to work offline and load faster, you can change
