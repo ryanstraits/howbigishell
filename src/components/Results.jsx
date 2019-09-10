@@ -30,7 +30,7 @@ class Results extends React.Component {
                               <div className="text-center">
                                   <h3>Based on your beliefs,</h3>
                                   <h2>{ calc.populationOfHell().toLocaleString(navigator.language, { minimumFractionDigits: 0 }) }</h2>
-                                  <p>is the current population of your hell.</p>
+                                  <p>is the current population of hell.</p>
                                   <p>
                                     That’s <strong>{ calc.populationPercentage() }%</strong> of all humans who’ve ever lived and <strong>{ calc.currentPopulationMultiplier() } times</strong> the current population of Earth.
                                   </p>
